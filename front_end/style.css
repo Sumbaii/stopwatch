@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin: 0;
+    background-color: rgb(39, 39, 39);
+    color: rgb(206, 206, 206);
+    font-size: 3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    display: inline;
+    line-height: 1;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+    transform: translateY(5vw)
+}
+
+#timer {
+    display: inline-flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+#hundredths {
+    font-size: 1.2em;
+}
+
+#timer-buttons button {
+    margin-top: 3vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    border-radius: 100%;
+    width: 2.5em;
+    height: 2.5em;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    border: none;
+    line-height: 1;
+    transform: translateY(-5vw);
+    overflow: visible;
+}
+
+#timer-buttons button:active {
+    filter: brightness(80%);
+}
+
+#start-stop:hover {
+    filter: brightness(90%);
+}
+
+#start-stop {
+    background-color: rgb(114, 183, 255);
+}
+
+#colon {
+    transform: translateY(-0.5vw);
+}
