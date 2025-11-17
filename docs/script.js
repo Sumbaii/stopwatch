@@ -3,6 +3,8 @@ const minutesText = document.getElementById("minutes");
 const secondsText = document.getElementById("seconds");
 const hundredthsText = document.getElementById("hundredths");
 
+const startStopImage = document.getElementById("startStopImage");
+
 const startStopButton = document.getElementById("start-stop");
 const resetButton = document.getElementById("reset");
 
@@ -38,7 +40,7 @@ function updateDisplay() {
 
 function start() {
     if (!running) {
-        startStopButton.textContent = "⏸"
+        startStopImage.src = "images/stop.svg"
         startTime = Date.now();
         timerInterval = setInterval(updateDisplay, 10);   // updates every 10 ms
         running = true;
@@ -47,7 +49,7 @@ function start() {
 
 function stop() {
     if (running) {
-        startStopButton.textContent = "▶"
+        startStopImage.src = "images/start.svg"
         clearInterval(timerInterval);
         elapsedTime += Date.now() - startTime;
         running = false;
@@ -55,7 +57,8 @@ function stop() {
 };
 
 function reset() {
-    startStopButton.textContent = "▶"
+    startStopImage.src = "images/start.svg"
+
     clearInterval(timerInterval);
     elapsedTime = 0;
     running = false;
