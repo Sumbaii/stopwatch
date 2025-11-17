@@ -3,26 +3,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 75vh;
     margin: 0;
     background-color: rgb(39, 39, 39);
     color: rgb(206, 206, 206);
     font-size: 3vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
 }
 
 p {
     display: inline;
     line-height: 1;
-    font-size: 2em;
+    font-size: 5.5em;
 }
 
 h1 {
-    font-size: 1.5em;
-    transform: translateY(5vw)
+    font-size: 2em;
+    transform: translateY(17vw)
 }
 
-#timer {
+#stopwatch {
     display: inline-flex;
     align-items: baseline;
     margin: 0;
@@ -30,14 +31,14 @@ h1 {
 }
 
 #hundredths {
-    font-size: 1.2em;
+    font-size: 3.3em;
 }
 
-#timer-buttons button {
-    margin-top: 3vw;
-    margin-right: 1vw;
-    margin-left: 1vw;
-    font-size: 1.5vw;
+#stopwatch-buttons button {
+    margin-top: 0;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size: 2.5vw;
     border-radius: 100%;
     width: 2.5em;
     height: 2.5em;
@@ -46,11 +47,11 @@ h1 {
     padding-bottom: 0;
     border: none;
     line-height: 1;
-    transform: translateY(-5vw);
+    transform: translateY(-12vw);
     overflow: visible;
 }
 
-#timer-buttons button:active {
+#stopwatch-buttons button:active {
     filter: brightness(80%);
 }
 
@@ -62,6 +63,11 @@ h1 {
     background-color: rgb(114, 183, 255);
 }
 
+#stopwatch-buttons img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
 #colon {
-    transform: translateY(-0.5vw);
+    transform: translateY(-1vw);
 }
