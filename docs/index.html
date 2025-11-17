@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
   <title>Stopwatch</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,7 +10,7 @@
 <body>
   <h1>Stopwatch</h1>
 
-  <div id="timer">
+  <div id="stopwatch">
     <p id="hours">00</p>
     <p id="colon">:</p>
     <p id="minutes">00</p>
@@ -20,9 +20,9 @@
     <p id="hundredths">00</p>
   </div>
 
-  <div id="timer-buttons">
-    <button id="start-stop">▶</button>
-    <button id="reset">⟳</button>
+  <div id="stopwatch-buttons">
+    <button id="start-stop"><img id="startStopImage" src="images/start.svg" alt="▶"></button>
+    <button id="reset"><img src="images/reset.svg" alt="⟳"></button>
   </div>
 
   <script src="script.js"></script>
