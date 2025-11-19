@@ -40,6 +40,7 @@ function updateDisplay() {
 
 function start() {
     if (!running) {
+        resetButton.disabled = false;
         startStopImage.src = "images/stop.svg"
         startTime = Date.now();
         timerInterval = setInterval(updateDisplay, 10);   // updates every 10 ms
@@ -58,6 +59,7 @@ function stop() {
 
 function reset() {
     startStopImage.src = "images/start.svg"
+    resetButton.disabled = true;
 
     clearInterval(timerInterval);
     elapsedTime = 0;
