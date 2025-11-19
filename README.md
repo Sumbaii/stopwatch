@@ -1,7 +1,8 @@
 # ⏱️ Stopwatch
 
 A simple, lightweight stopwatch web app built with **HTML**, **CSS**, and **JavaScript**.  
-Perfect for timing tasks quickly right in your browser!
+Perfect for timing tasks quickly right in your browser!  
+Modeled after the Windows Clock stopwatch.
 
 ---
 
